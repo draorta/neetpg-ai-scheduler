@@ -1,0 +1,21 @@
+import streamlit as st
+import pandas as pd
+
+st.title("NEET PG Scheduler 🎯")
+
+st.write("Welcome, Dr. Manoj! Let's build your daily planner using AI + PYQ strategy.")
+
+# Sample table
+data = {
+    "Topic": ["Anatomy - Brachial Plexus", "Pharmac - Autonomics", "Medicine - ECG Basics"],
+    "Recommended Time (hrs)": [2, 1.5, 2.5],
+    "Priority": ["High", "Medium", "High"]
+}
+df = pd.DataFrame(data)
+st.dataframe(df)
+
+if st.button("Generate Study Plan"):
+    st.success("Your AI-assisted study plan will be generated soon!")
+streamlit run app.py
+streamlit run app.py
+
